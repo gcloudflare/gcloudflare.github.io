@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Arial';
+}
+
+.to-do-wrapper {
+	width: 30%;
+	margin:40px auto;
+	border: 1px solid #f5f5f5;
+	border-radius: 4px;
+	padding: 14px;
+	box-shadow: #ececec -1px -2px 10px 0px;
+}
+
+.app-name {
+	margin: 0px;
+}
+
+.title {
+	text-transform: uppercase;
+  border-bottom: 2px solid;
+  padding-bottom: 8px;
+  margin: 14px 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.task-box {
+	width: 90%;
+	font-size: 12px;
+	border-radius: 4px;
+	border: 1px solid #dadada;
+	vertical-align: middle;
+	padding: 7px 4px 8px 7px;
+	margin-right: 1%;
+}
+
+.btn {
+	padding: 8px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	margin-left: 5px;
+}
+
+.item-list {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.item-list .task-box {
+	border: 1px solid #fff;
+}
+
+.item-list li {
+	padding: 15px 0;
+	border-bottom: 1px solid #dadada;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.complete-task {
+	margin-top: 10px;
+}
+
+.item-list li:last-child {
+	border: 0px;
+}
+
+.item-list li:first-child {
+	padding-top: 5px;
+}
+
+.scroller {
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+#completed-items-list li .task-box:not(:focus) {
+	text-decoration: line-through;
+}
+
+.hide {
+	display: none;
+}
+
+.item-list .task-box.editing {
+    border: 1px solid #3a88fd;
+}
